@@ -1,0 +1,114 @@
+
+#h1{
+    color: rgb(255, 254, 254);
+    
+}
+#div1{
+    height: 550px;
+    width: 650px;
+    border: 1px solid black;
+    background-color:rgb(9, 153, 153) ;
+}
+.div2{
+    height: 550px;
+    width: 650px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+#div0{
+    display: flex;
+}
+
+.div3{
+    background-color: white; 
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#div5{
+    background-color: white;
+    height: 40px;
+    border: 1px solid white;
+}
+#btn1{
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 80px;
+}
+#btn2{
+    margin-top: 10px;
+    margin-left: 60px;
+    
+}
+#text{
+    display: block;
+}
+#btn3{
+    margin-left: 550px;
+    border: 2px solid rgb(9, 153, 153);
+}
+#div6{
+    background-color: rgb(9, 153, 153);
+    border: 2px solid black;
+}
+#btn4{
+    margin-right: 550px;
+    border: 2px solid rgb(9, 153, 153);
+}
+.tworgtdiv{
+    height: 550px;
+    width: 650px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    color: black;
+
+}
+#btn5{
+    margin-right: 400px;
+    border: 2px solid rgb(9, 153, 153);
+}
+
+#btn4{
+    margin-right: 400px;
+    border: 2px solid rgb(9, 153, 153);
+}
+#th1{
+    text-align: center;
+    
+}
+.hide,.hide1{
+    display: none;
+}
+#div7{
+    background-color: aqua;
+    height: 80px;
+
+}
+#div8{
+    height: 100px;
+    width: 500px;
+    border: 2px solid aqua ;
+    display: block;
+    background-color: aqua;
+    overflow: auto;
+    
+}
+.div9{
+    height: 130px;
+    display: none;
+}
+.insidediv{
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+    
+}
+#like{
+    margin-right: 80px;
+}
+#dislike{
+    margin-right: 80px;
+}
+
+

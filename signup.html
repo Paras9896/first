@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin&up.css">
+</head>
+<body>
+    <div class="divv">
+        <center>
+            <h1>Sign Up</h1>
+        </center>
+        <h3>Name:</h3>
+        <input type="text" placeholder="Enter name" id="nameinput">
+        <h3>Email:</h3>
+        <input type="email" placeholder="Enter Email" id="emailinput">
+        <h3>Password:</h3>
+        <input type="password" placeholder="Enter Password" id="passinput">
+        <br><br>
+        <center>
+            <button id="submitbutton">Submit</button>
+        </center>
+
+        <script>
+            let arr=[];
+            let submitbutton=document.querySelector('#submitbutton');
+            let name=document.getElementById('nameinput');
+            let email=document.getElementById('emailinput');
+            let password=document.getElementById('passinput');
+            submitbutton.addEventListener("click",show3);
+            function show3(){
+                let data={
+                    name: name.value,
+                    email: email.value,
+                    password: password.value,
+                };
+                let xhr3=new XMLHttpRequest();
+                xhr3.open("POST","/file");
+                xhr3.setRequestHeader("content-type","application/json");
+                xhr3.send(JSON.stringify(data));
+                console.log(data);
+            }
+        </script>
+    </div>
+</body>
+</html>

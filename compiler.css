@@ -1,0 +1,35 @@
+#outerdiv{
+    border: 2px solid black;
+    height: 700px;
+    width: 800px;
+    margin-left: 250px;
+}
+#heading{
+    display: inline;
+    margin-right: 530px;
+    margin-left: 10px;
+}
+#selectlang{
+    margin-left: 10px;
+    display: inline;
+}
+#codetxt{
+    height: 400px;
+    width: 770px;
+    border: 2px solid lightgrey;
+    margin-left: 10px;
+}
+#outputdiv{
+    height: 150px;
+    width: 770px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+#compilebutton{
+    /* background-color: rgb(217, 199, 5); */
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    font-size: large;
+}

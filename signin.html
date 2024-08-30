@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin&up.css">
+</head>
+<body>
+    <div class="divv">
+    <center>
+        <h1>Sign In</h1>
+    </center>
+    <h3>Email:</h3>
+    <input type="email" placeholder="Enter Email" id="email2input">
+    <h3>Password:</h3>
+    <input type="password" placeholder="Enter Password" id="pass2input">
+    <br><br>
+    <center>
+        <button id="submit2button">Submit</button>
+    </center>
+
+    <script>
+        //let arr=[];
+        let submitbutton=document.querySelector('#submit2button');
+        let email1=document.getElementById('email2input');
+        let password1=document.getElementById('pass2input');
+        submitbutton.addEventListener("click",show3);
+        
+        function show3(){
+            let data={
+            email2:email1.value,
+            password2:password1.value,
+            };
+           // arr.push(data);
+            let xhr=new XMLHttpRequest();
+            xhr.open("POST","/file2");
+            xhr.setRequestHeader("Content-Type","application/json");
+            xhr.send(JSON.stringify(data));
+            xhr.onreadystatechange=()=>{
+                if(xhr.readyState===4){
+                    if(xhr.status==302){
+                        window.location.href="/todo.html";
+                    }
+                    else if (xhr.status === 401) {
+                        alert("Invalid Credentials");
+                    } else if (xhr.status === 400) {
+                        alert("Invalid JSON format sent to the server.");
+                    }
+                }    
+            };
+
+        }
+    
+    </script>
+    
+</div>
+</body>
+</html>
